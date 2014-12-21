@@ -1,0 +1,56 @@
+---
+title       : Learning Regression Models
+subtitle    : Interactive Multivariate Regression Learning
+author      : Muhammad Owais Masood
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : mathjax       # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Multivariate Regression
+
+1. Complex Topic : Difficult to Learn
+2. Difficult to assess the impact of adding new dependent variables.
+3. Solution is to provide an interactive learning APP to PLUG and PLAY the variables
+4. Use Simple Dataset
+
+--- .class #id 
+
+## MTCARS DataSet
+
+1. Learning MULTIVARIATE Regression through a PRE BUILT Data Set
+1. Dataset used for this study was extracted from the 1974 Motor Trend US magazine
+2. MPG vs 10 aspects of automobile design and performance for 32 automobiles
+
+```{r}
+data(mtcars) ; head(mtcars,2)
+```
+
+--- 
+## MTCARS CONTINUED : PAIRWISE PLOT
+
+```{r,echo=FALSE}
+pairs(mpg ~ am + cyl + wt + hp , data = mtcars)
+```
+
+---
+## ABOUT THE APP
+
+1. Select the variables that you want
+2. Get the Model Coefficient
+3. Get the R2
+4. Add/Remove Variables to Assess The Impact
+
+---
+## APPLICATION AVAILABLE ON
+
+1. https://owaismasood.shinyapps.io/DataProject/
+
+
+
+
+
